@@ -1,0 +1,125 @@
+body {
+  background-color: #2f2f2f;
+  color: #cacaca;
+  overflow-x: hidden;
+  margin: 0;
+}
+p,
+blockquote {
+  font-family: "Lato", sans-serif;
+}
+.title,
+li {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+}
+.about-me {
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  border-bottom: 2px solid #dbe6fd;
+}
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.nav-items {
+  text-align: right;
+  margin-right: 70px;
+  margin-top: 25px;
+}
+.nav-link {
+  display: inline;
+  padding: 5px;
+  margin: 0 5px;
+  font-size: 18px;
+}
+.container {
+  position: relative;
+  height: 100vh;
+  /* background-color: rgba(155, 245, 182, 0.651); */
+}
+.hero-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* background-color: #cacaca2f; */
+}
+.floating-social-link {
+  font-size: 35px;
+  position: absolute;
+  z-index: 99;
+  top: 25%;
+}
+.floating-social-link a {
+  display: block;
+  /* background-color: rgb(18, 7, 80); */
+  background-color: #dbe6fd;
+  color: #293b5f;
+  padding: 5px;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+.floating-social-link a:hover {
+  background-color: #293b5f;
+  color: #dbe6fd;
+}
+.container {
+  border-bottom: 10px solid #dbe6fd;
+  border-bottom-left-radius: 50%;
+}
+#about {
+  margin: 10px 20px;
+  /* height: 500px; */
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+#about .about-education .styled-list {
+  list-style-type: circle;
+  /* text-decoration: wavy; */
+  color: #dbe6fd;
+  margin: 10px;
+}
+.education-list {
+  display: flex;
+  flex-flow: row wrap;
+}
+.author-img {
+  background-color: #b2ab8c;
+  border-radius: 60% 25%;
+  width: 50vw;
+  float: right;
+}
+.author-img img {
+  height: 40vw;
+  padding-left: 50px;
+  /* margin-bottom: -3px; */
+  border-bottom-left-radius: 45%;
+  border-bottom-right-radius: 45%;
+  padding-bottom: 2px;
+}
+.cd {
+  display: flex;
+  flex-flow: row wrap;
+}
+#about .fav-cd .styled-list {
+  list-style-type: circle;
+  /* text-decoration: wavy; */
+  color: #dbe6fd;
+  margin: 10px;
+}

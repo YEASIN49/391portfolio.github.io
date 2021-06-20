@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/160321d6f6.js"></script>
+
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <div class="nav-wrapper">
+        <div class="nav-container">
+          <ul class="nav-items">
+            <!-- <li>My Work</li> -->
+            <li class="nav-link"><a href="#about">About</a></li>
+            <li class="nav-link"><a href="">Contact</a></li>
+            <!-- <li></li> -->
+          </ul>
+        </div>
+      </div>
+
+      <section class="floating-social-link">
+        <a href="https://www.github.com"><i class="fab fa-github"></i></a>
+        <a href="https://gmail.com"><i class="far fa-envelope"></i></a>
+        <a href="https://linkedin.com"><i class="fab fa-linkedin"></i></a>
+      </section>
+      <!-- ################### -->
+      <div class="container">
+        <h1 class="hero-title title">
+          Hello ! <br />
+          This is MD.YEASIN ALI
+        </h1>
+      </div>
+      <!-- ################# -->
+      <section id="about">
+        <div class="about-education">
+          <h2 class="title about-me">Education</h2>
+          <div>
+            <div class="author-img"><img src="me.png" alt="" /></div>
+            <ul>
+              <li class="styled-list">SSC from Khilgoan Govt. High School.</li>
+              <li class="styled-list">HSC from Dhaka Imperial College.</li>
+              <li class="styled-list">
+                BSc from <a href="https://www.bracu.ac.bd">BRAC University.</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="about-hobby">
+          <div class="quote">
+            <h2 class="title">Favourite Quote</h2>
+            <blockquote>
+              Storms come and go, the big fish eat the little fish, and l keep
+              on paddling.
+            </blockquote>
+          </div>
+          <!-- ################# -->
+          <div class="fav-cd">
+            <h2 class="title">Favourite CD's</h2>
+            <ul class="cd">
+              <li class="styled-list">Artcell - Onnoshomoy</li>
+              <li class="styled-list">Godfather</li>
+              <li class="styled-list">Game of Thrones</li>
+              <li class="styled-list">COD - World at War 2</li>
+              <li class="styled-list">Stronghold 3</li>
+              <li class="styled-list">Road Rush</li>
+              <li class="styled-list">Rainbow Six Siege</li>
+              <li class="styled-list">Evil Dead</li>
+              <li class="styled-list">Shawshank Redemption</li>
+              <li class="styled-list">interstellar</li>
+            </ul>
+          </div>
+          <!-- ############### -->
+          <div class="favourite-img">
+            <img src="" alt="" /><img src="" alt="" /><img src="" alt="" />
+          </div>
+          <!-- ############# -->
+          <div class="random-table">
+            <h2 class="title">Visited</h2>
+            <table>
+              <tr>
+                <th>Place</th>
+                <th>District</th>
+              </tr>
+              <tr>
+                <td>Cox's Bazar</td>
+                <td rowspan="2">Chittagong</td>
+              </tr>
+              <tr>
+                <td>Bandarban</td>
+              </tr>
+              <tr>
+                <td>Jaflong</td>
+                <td>Sylhet</td>
+              </tr>
+              <tr>
+                <td>Kuakata</td>
+                <td>Potuakhali</td>
+              </tr>
+            </table>
+          </div>
+          <!-- ############# -->
+          <div class="fav-cd">
+            <h2 class="title">Favourite Links</h2>
+            <ul class="cd">
+              <li class="styled-list">
+                <a href="https://www.google.com">Google</a>
+              </li>
+
+              <li class="styled-list">
+                <a href="https://www.https://www.w3schools.com/">W3school</a>
+              </li>
+
+              <li class="styled-list">
+                <a
+                  href="https://www.developer.mozilla.org
+                "
+                  >MDN Web Docs</a
+                >
+              </li>
+              <li class="styled-list">
+                <a href="https://www.github.com">Github</a>
+              </li>
+              <li class="styled-list">
+                <a href="https://www.stackoverflow.com">Stackoverflow</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="update-section">
+      <h3 class="title">Created : June 19 2021</h3>
+      <h3 class="title">
+        Last Updated :
+        <p id="date"></p>
+      </h3>
+    </div>
+    <script>
+      const dt = new Date();
+      document.getElementById("date").innerHTML = dt;
+    </script>
+  </body>
+</html>
