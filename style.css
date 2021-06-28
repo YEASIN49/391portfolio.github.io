@@ -123,3 +123,127 @@ th {
   color: #dbe6fd;
   margin: 10px;
 }
+/* ***********************
+*
+* Assignment 02
+*
+**************************** */
+.hero-converter-wrapper {
+  /* text-align: center; */
+  /* align-items: center; */
+  /* display: block; */
+  /* display: inline-block; */
+  /* margin: auto; */
+}
+input,
+select {
+  display: inline-block;
+  height: 25px;
+  vertical-align: bottom;
+  border: none;
+  margin: 5px auto;
+  border-radius: 5px;
+  padding: 0 10px;
+
+  /* box-shadow: 0px; */
+}
+.btn {
+  height: 25px;
+  width: 45px;
+  background-color: #a9f2ff;
+}
+.hero-converter-wrapper h1 {
+  /* display: block; */
+  font-family: "Roboto", sans-serif;
+  margin: 40px auto;
+  width: 80%;
+  text-align: center;
+}
+.converter-container {
+  margin: auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  width: 80%;
+  height: 100%;
+  /* background: red; */
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+  text-align: center;
+  /* vertical-align: middle; */
+  /* margin: auto; */
+}
+
+#convert-form {
+  /* margin: auto; */
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin: 5px;
+  /* background-color: red; */
+}
+/* #convert-form input{
+  margin: 5px;
+} */
+#convert-form label {
+  /* margin-top: auto; */
+  margin: auto;
+  display: inline-block;
+  height: 30px;
+  /* vertical-align: middle; */
+  /* margin: 10px 5px; */
+}
+#result-box {
+  margin: 5px;
+  display: inline-block;
+}
+.series-output-wrapper {
+  text-align: center;
+  margin: 50px auto;
+}
+.series-output-container {
+  min-width: 80%;
+  max-width: 80%;
+  margin: auto;
+  /* text-align: center; */
+}
+.table {
+  display: table;
+  text-align: center;
+  min-width: 100%;
+  margin: auto;
+  border: 2px solid aliceblue;
+  border-radius: 5px;
+}
+.tr {
+  display: table-row;
+  /* text-align: right; */
+  /* padding: 30px; */
+  /* margin: 100px; */
+}
+.tr p {
+  /* height: 40px; */
+  padding: 0 20px;
+  margin: 0;
+  text-align: right;
+}
+.td {
+  display: table-cell;
+  /* border-right: 10px solid red; */
+  min-width: 100px;
+  text-align: left;
+  height: 30px;
+  vertical-align: middle;
+  /* margin: auto; */
+  /* margin: 200px; */
+}
+#out-max,
+#out-min,
+#out-avg,
+#out-sum,
+#out-rev {
+  text-align: left;
+}
+/* .tr:nth-child(odd) p {
+  text-align: right;
+  background-color: red;
+} */

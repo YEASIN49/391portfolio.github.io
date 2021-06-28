@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" type="text/css" href="../style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://kit.fontawesome.com/160321d6f6.js"></script>
+
+    <title>Assignment 02</title>
+  </head>
+  <body>
+    <div class="site-wrapper">
+      <nav class="nav-wrapper">
+        <div class="nav-container">
+          <ul class="nav-items">
+            <!-- <li>My Work</li> -->
+
+            <li class="nav-link"><a href="../">Home</a></li>
+            <li class="nav-link">
+              <a href="assignment-2.html">Assignment 02</a>
+            </li>
+            <li class="nav-link"><a href="../#about">About</a></li>
+
+            <!-- <li></li> -->
+          </ul>
+        </div>
+      </nav>
+      <!-- Nav ends here -->
+      <section class="hero-converter-wrapper">
+        <h1 class="title">Hero Converter</h1>
+        <div class="converter-container">
+          <form action="" id="convert-form">
+            <label for="convertValue">Convert</label>
+            <input type="number" id="sampleValue" />
+            <select id="unitSelector" name="unit-selector">
+              <option value="toKg">lb to kg</option>
+              <option value="toLb">kg to lb</option>
+            </select>
+            <input type="submit" value="Go" class="btn" />
+          </form>
+          <p id="result-box">Result : <span id="convertedResult"></span></p>
+        </div>
+      </section>
+      <section class="series-output-wrapper">
+        <h1 class="title">Simple Calculator</h1>
+        <div class="series-output-container">
+          <div class="table">
+            <div class="tr">
+              <div class="td"><p>Input Series of Number :</p></div>
+              <div class="td">
+                <input type="input" id="numberSeries" /><input
+                  id="numberSeries-btn"
+                  type="submit"
+                  value=" Find"
+                  style="margin-left: 5px"
+                />
+              </div>
+            </div>
+            <div class="tr">
+              <div class="td"><p>Maximum :</p></div>
+              <div class="td"><p id="out-max"></p></div>
+            </div>
+            <div class="tr">
+              <div class="td"><p>Minimum :</p></div>
+              <div class="td"><p id="out-min"></p></div>
+            </div>
+            <div class="tr">
+              <div class="td"><p>Sum :</p></div>
+              <div class="td"><p id="out-sum"></p></div>
+            </div>
+            <div class="tr">
+              <div class="td"><p>Average :</p></div>
+              <div class="td"><p id="out-avg"></p></div>
+            </div>
+            <div class="tr">
+              <div class="td"><p>Reverse Order :</p></div>
+              <div class="td"><p id="out-rev"></p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        // const formData = new FormData(document.querySelector('form'))
+        // for (var pair of formData.entries()) {
+        // console.log(pair[0] + ': ' + pair[1]);
+        // }
+        var d;
+
+        // const converter = () => {
+        // 	d = event;
+        // 	console.log(d);
+        // }
+
+        const form = document.getElementById("convert-form");
+        form.addEventListener("submit", (event) => {
+          event.preventDefault();
+          const sample = document.getElementById("sampleValue").value;
+          console.log(sample);
+          const convertTo = document.getElementById("unitSelector").value;
+          console.log(convertTo);
+          const result =
+            convertTo == "toKg"
+              ? sample * 0.4536 + " Kg"
+              : sample * 2.2046 + " lb";
+          console.log(result);
+          document.getElementById("convertedResult").innerHTML = result;
+        });
+        console.log(d);
+
+        //   #############################
+        let valueSet;
+        //   let arr = [];
+        const seriesDataBtn = document.getElementById("numberSeries-btn");
+        seriesDataBtn.addEventListener("click", (event) => {
+          console.log("Running inside");
+          //  console.log(event.target.value);
+          const seriesData = document.getElementById("numberSeries").value;
+          console.log(seriesData);
+          const arr = seriesData.split(",");
+          console.log(arr);
+          //  console.log(typeof arr);
+          const max = Math.max(...arr);
+          console.log(max);
+          document.getElementById("out-max").innerHTML = max;
+          const min = Math.min(...arr);
+          console.log(min);
+          document.getElementById("out-min").innerHTML = min;
+          //  let total = 0;
+          const total = arr.reduce((accumulator, currentValue) => {
+            // total = parseInt(accumulator);
+            return parseInt(accumulator) + parseInt(currentValue);
+          });
+          document.getElementById("out-sum").innerHTML = total;
+          const avg = total / arr.length;
+          document.getElementById("out-avg").innerHTML = avg;
+          // total = parseInt(accumulator);
+          // console.log(parseInt(accumulator) + "ac");
+          // parseInt(accumulator + currentValue);
+          //  });
+          console.log(total);
+          console.log("avg");
+          console.log(avg);
+          const arrReverse = arr.reverse();
+          document.getElementById("out-rev").innerHTML = arrReverse;
+
+          //  valueSet = event.target.value;
+          //  if (valueSet.slice(-1) == ",") {
+          //    arr.push(valueSet.slice(0, -1));
+          //    console.log("below arr");
+          //    console.log(arr);
+          //    event.target.value = null;
+          //  }
+          //  const max = Math.max(...arr);
+          //  console.log("below max");
+          //  console.log(max);
+
+          //  console.log("after Pushing : " + tempArray);
+        });
+        //   console.log("sd" + seriesData);
+      </script>
+    </div>
+  </body>
+</html>
