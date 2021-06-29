@@ -277,7 +277,7 @@ select {
 .quote-container {
   text-align: center;
   width: 90%;
-  margin: auto;
+  margin: 50px auto;
 }
 .qt-btn {
   width: 30px;
