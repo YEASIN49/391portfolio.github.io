@@ -86,85 +86,79 @@
           </div>
         </div>
       </section>
+
+      <!-- ###################################### -->
+
+      <section class="magic-wrapper">
+        <h1>Text Magic!</h1>
+        <div class="magic-container">
+          <div id="magic">
+            <textarea
+              name=""
+              id="text"
+              cols="80"
+              rows="12"
+              placeholder="See magic here!"
+            ></textarea>
+            <br />
+            <button onclick="document.getElementById('text').value = ''">
+              Clear It
+            </button>
+            <button onclick="capitalize(document.getElementById('text').value)">
+              Capitalize
+            </button>
+            <button onclick="sortout(document.getElementById('text').value)">
+              Sort
+            </button>
+            <button onclick="addNo(document.getElementById('text').value)">
+              Add Number
+            </button>
+            <button onclick="rev(document.getElementById('text').value)">
+              Reverse
+            </button>
+            <button onclick="blankRmv()">Strip Blank</button>
+            <button onclick="shuff(document.getElementById('text').value)">
+              Shuffle
+            </button>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <!--  -->
+      <!--  -->
+
+      <section class="quote-wrapper">
+        <div class="quote-container">
+          <h1 class="title">Random Quote Box</h1>
+          <div id="quote-box">
+            <p id="quote">Click below buttons to see some quotes</p>
+          </div>
+          <div>
+            <button class="qt-btn" id="lightgreen"></button>
+            <button class="qt-btn" id="darkblue"></button>
+            <button class="qt-btn" id="orange"></button>
+            <button class="qt-btn" id="maroon"></button>
+          </div>
+        </div>
+      </section>
+
+      <!--  -->
+      <!--  -->
+      <!--  -->
+      <!-- ####################################### -->
       <script>
         // const formData = new FormData(document.querySelector('form'))
         // for (var pair of formData.entries()) {
         // console.log(pair[0] + ': ' + pair[1]);
         // }
-        var d;
+        // var d;
 
         // const converter = () => {
         // 	d = event;
         // 	console.log(d);
         // }
-
-        const form = document.getElementById("convert-form");
-        form.addEventListener("submit", (event) => {
-          event.preventDefault();
-          const sample = document.getElementById("sampleValue").value;
-          console.log(sample);
-          const convertTo = document.getElementById("unitSelector").value;
-          console.log(convertTo);
-          const result =
-            convertTo == "toKg"
-              ? sample * 0.4536 + " Kg"
-              : sample * 2.2046 + " lb";
-          console.log(result);
-          document.getElementById("convertedResult").innerHTML = result;
-        });
-        console.log(d);
-
-        //   #############################
-        let valueSet;
-        //   let arr = [];
-        const seriesDataBtn = document.getElementById("numberSeries-btn");
-        seriesDataBtn.addEventListener("click", (event) => {
-          console.log("Running inside");
-          //  console.log(event.target.value);
-          const seriesData = document.getElementById("numberSeries").value;
-          console.log(seriesData);
-          const arr = seriesData.split(",");
-          console.log(arr);
-          //  console.log(typeof arr);
-          const max = Math.max(...arr);
-          console.log(max);
-          document.getElementById("out-max").innerHTML = max;
-          const min = Math.min(...arr);
-          console.log(min);
-          document.getElementById("out-min").innerHTML = min;
-          //  let total = 0;
-          const total = arr.reduce((accumulator, currentValue) => {
-            // total = parseInt(accumulator);
-            return parseInt(accumulator) + parseInt(currentValue);
-          });
-          document.getElementById("out-sum").innerHTML = total;
-          const avg = total / arr.length;
-          document.getElementById("out-avg").innerHTML = avg;
-          // total = parseInt(accumulator);
-          // console.log(parseInt(accumulator) + "ac");
-          // parseInt(accumulator + currentValue);
-          //  });
-          console.log(total);
-          console.log("avg");
-          console.log(avg);
-          const arrReverse = arr.reverse();
-          document.getElementById("out-rev").innerHTML = arrReverse;
-
-          //  valueSet = event.target.value;
-          //  if (valueSet.slice(-1) == ",") {
-          //    arr.push(valueSet.slice(0, -1));
-          //    console.log("below arr");
-          //    console.log(arr);
-          //    event.target.value = null;
-          //  }
-          //  const max = Math.max(...arr);
-          //  console.log("below max");
-          //  console.log(max);
-
-          //  console.log("after Pushing : " + tempArray);
-        });
-        //   console.log("sd" + seriesData);
       </script>
+      <script src="./index.js"></script>
     </div>
   </body>
 </html>
