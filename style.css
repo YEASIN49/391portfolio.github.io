@@ -126,6 +126,9 @@ th {
   color: #dbe6fd;
   margin: 10px;
 }
+.update-section {
+  padding: 20px;
+}
 /* ***********************
 *
 * Assignment 02
@@ -269,6 +272,7 @@ select {
 .quote-wrapper {
   width: 100%;
   text-align: center;
+  margin: 25px auto;
 }
 .quote-container {
   text-align: center;
